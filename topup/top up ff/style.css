@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002649;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 100vh;
+
+}
+
+/* Style CSS untuk navbar */
+.navbar {
+    background-color: #004797;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 10px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.kembali {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* player id*/
+h1,
+label {
+    text-align: center;
+    color: white;
+}
+
+#topup-form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* menu */
+.price-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.price-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ccc;
+    background-color: #00469738;
+}
+
+.price-label {
+    font-weight: bold;
+}
+
+.price-item:hover {
+    background-color: #004797;
+    transition: background-color 0.15s ease;
+}
+
+.price-item.active {
+    background-color: #4CAF50;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    color: black;
+}
+
+.price-value {
+    background-color: #00469738;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* PAYMENT */
+
+.container-payment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: max-content;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    /* Atur lebar sesuai kebutuhan */
+    transition: background-color 0.3s, border-color 0.1s;
+    ;
+}
+
+.payment-method:hover {
+    border-color: #000000;
+}
+
+.payment-method.active {
+    background-color: white
+}
+
+.payment-method img {
+    width: 96px;
+    height: 64px;
+    margin-right: 10px;
+    /* Menambahkan margin kanan untuk memberi jarak antara gambar dan tulisan */
+}
+
+
+#result {
+margin-top: 20px;
+font-weight: bold;
+text-align: center;
+position: absolute;
+top: 75%;
+left: 80%;
+transform: translateX(-50%);
+  }

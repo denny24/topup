@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP UP PUBG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../../halaman/page.html" class="navbar-brand">DeTOP</a>
+        <ul class="navbar-menu">
+            <li><span id="username"></span></li>
+            <li> </li>
+            <button><a class="kembali" href="../topup.html">KEMBALI</a></button>
+        </ul>
+    </nav>
+    <!-- PLAYER ID -->
+    <h1>Top Up Player ID</h1>
+
+    <form id="topup-form">
+        <label for="player-id">Player ID:</label>
+        <input type="text" id="player-id" placeholder="Masukkan Player ID" required>
+        <button type="submit">Top Up</button>
+    </form>
+    <!-- PRICE MENU -->
+    <div class="price-menu">
+        <div class="price-item" data-price="5.000">
+            <div class="price-label">30M KOIN EMAS</div>
+            <div class="price-value">Rp 5.000</div>
+        </div>
+        <div class="price-item" data-price="10.000">
+            <div class="price-label">60M KOIN EMAS</div>
+            <div class="price-value">Rp 10.000</div>
+        </div>
+        <div class="price-item" data-price="30.000">
+            <div class="price-label">200M KOIN EMAS</div>
+            <div class="price-value">Rp 30.000</div>
+        </div>
+        <div class="price-item" data-price="60.000">
+            <div class="price-label">400M KOIN EMAS</div>
+            <div class="price-value">Rp 60.000</div>
+        </div>
+        <div class="price-item" data-price="250.000">
+            <div class="price-label">2B KOIN EMAS</div>
+            <div class="price-value">Rp 250.000</div>
+        </div>
+        <div class="price-item" data-price="500.000">
+            <div class="price-label">4B KOIN EMAS</div>
+            <div class="price-value">Rp. 500.000</div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- PAYMENT -->
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="../assets/dana.pg.png" alt="Credit Card">
+            </div>
+            <div class="payment-method">
+                <img src="../assets/gopay.png" alt="PayPal">
+            </div>
+            <div class="payment-method">
+                <img src="../assets/ovo.png" alt="Bank Transfer">
+            </div>
+        </div>
+            <div id="result"></div>
+
+    <!-- <div id="result"> -->
+</body>
+<script src="index.js"></script>
+
+</html>

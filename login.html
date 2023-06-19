@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body> 
+  <h1>Login Page</h1>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="username" required><br><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="password" required><br><br>
+    <input type="button" value="Login" onclick="validateLogin()"><br><br>
+    <div class="button-container">
+      <button onclick="openRegisterPopup()">Register Akun Baru</button>
+      <button type="button" onclick="forgotPassword()">Lupa Password</button> 
+    </div>
+  </form>
+
+<!-- Pop-up -->
+<div id="popup" class="popup">
+<div id="popup-content" class="popup-content"></div>
+</body>
+<script src="login.js"></script>
+<script src="register.js"></script>
+</html>

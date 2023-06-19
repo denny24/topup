@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #002649;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  transition: color 0.3s;
+  margin-top: 100px
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
+  transition: background-color 0.3s;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.popup-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  /* Ubah nilai sesuai kebutuhan */
+  padding: 8px;
+  /* Ubah nilai sesuai kebutuhan */
+  margin: -5px 0;
+}
+
+.popup-content.register-popup input {
+  margin: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30%
+}

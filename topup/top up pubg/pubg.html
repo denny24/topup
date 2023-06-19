@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP UP PUBG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../halaman/page.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../../halaman/page.html" class="navbar-brand">DeTOP</a>
+        <ul class="navbar-menu">
+            <p>Saldo: Rp.<span id="saldo"></span></p>
+            <li> </li>
+            <button><a class="kembali" href="../topup.html">KEMBALI</a></button>
+        </ul>
+    </nav>
+    <!-- PLAYER ID -->
+    <h1>Top Up Player ID</h1>
+
+    <form id="topup-form">
+        <label for="player-id">Player ID:</label>
+        <input type="text" id="player-id" placeholder="Masukkan Player ID" required>
+        <button type="submit">Top Up</button>
+    </form>
+    <!-- PRICE MENU -->
+    <div class="price-menu">
+        <div class="price-item" data-price="5000">
+            <div class="price-label">25 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 5.000</div>
+        </div>
+        <div class="price-item" data-price="7000">
+            <div class="price-label">35 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 7.000</div>
+        </div>
+        <div class="price-item" data-price="5000">
+            <div class="price-label">25 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 5.000</div>
+        </div>
+        <div class="price-item" data-price="7000">
+            <div class="price-label">35 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 7.000</div>
+        </div>
+        <div class="price-item" data-price="5000">
+            <div class="price-label">25 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 5.000</div>
+        </div>
+        <div class="price-item" data-price="7000">
+            <div class="price-label">35 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 7.000</div>
+        </div>
+        <div class="price-item" data-price="5000">
+            <div class="price-label">25 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 5.000</div>
+        </div>
+        <div class="price-item" data-price="7000">
+            <div class="price-label">35 UC</div>
+            <img src="../assets/uc.png" alt="UC 50">
+            <div class="price-value">Rp 7.000</div>
+        </div>
+        <!-- Tambahkan price-item lainnya di sini -->
+    </div>
+    <br><br>
+
+    <!-- PAYMENT -->
+    <div class="payment-methods">
+        <div class="payment-method" data-payment="DANA">
+            <img src="../assets/dana.pg.png" alt="Credit Card">
+        </div>
+        <div class="payment-method" data-payment="GOPAY">
+            <img src="../assets/gopay.png" alt="PayPal">
+        </div>
+        <div class="payment-method" data-payment="OVO">
+            <img src="../assets/ovo.png" alt="PayPal">
+        </div>
+        <!-- Tambahkan payment-method lainnya di sini -->
+    </div>
+
+    <!-- Pop Up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Top Up Summary</h2>
+            <div class="detop-text">DeTOP</div>
+            <div id="player-id-summary"></div>
+            <div class="payment-method-summary-wrapper">
+                <span class="payment-label">Metode Pembayaran:</span>
+                <span id="payment-method-summary"></span>
+            </div>
+            <div class="price-summary-wrapper">
+                <span class="price-label">Harga:</span>
+                <span id="price-summary"></span>
+            </div>
+            <div class="time-summary-wrapper">
+                <span class="time-label">Waktu:</span>
+                <span id="time-summary"></span>
+            </div>
+            <button id="confirm-btn">Confirm</button>
+        </div>
+    </div>
+
+    <!-- Hasil Top Up -->
+    <div id="result"></div>
+           <!-- Result Popup -->
+           <div id="result-popup" class="popup">
+            <div class="popup-content">
+                <span id="close-btn" class="close-btn">&times;</span>
+                <div id="result-content"></div>
+            </div>
+        </div>
+        <!-- Tambahkan elemen ini di dalam body -->
+
+</body>
+<script src="index.js"></script>
+<script src="../../halaman/page.js"></script>
+
+</html>

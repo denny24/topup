@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002649;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 100vh;
+
+}
+
+/* Style CSS untuk navbar */
+.navbar {
+    background-color: #004797;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 10px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.kembali {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* player id*/
+h1,
+label {
+    text-align: center;
+    color: white;
+}
+
+#topup-form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+}
+
+/* menu */
+.price-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.price-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ccc;
+    background-color: #00469738;
+}
+
+
+.price-label {
+    font-weight: bold;
+}
+
+.price-item:hover {
+    background-color: #004797;
+    transition: background-color 0.15s ease;
+}
+
+.price-item.active {
+    background-color: #4CAF50;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    color: black;
+}
+
+.price-value {
+    background-color: #00469738;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* PAYMENT */
+
+.container-payment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: max-content;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    /* Atur lebar sesuai kebutuhan */
+    transition: background-color 0.3s, border-color 0.1s;
+    ;
+}
+
+.payment-method:hover {
+    background-color: #004797;
+}
+
+.payment-method.active {
+    background-color: white
+}
+
+.payment-method img {
+    width: 96px;
+    height: 64px;
+    margin-right: 10px;
+    /* Menambahkan margin kanan untuk memberi jarak antara gambar dan tulisan */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: relative;
+    max-width: 400px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.detop-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#player-id-summary,
+#payment-method-summary,
+#price-summary,
+#time-summary {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#confirm-btn {
+    margin-top: 20px;
+    width: 250px;
+}
+
+
+
+.detop-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.time-summary-wrapper,
+.price-summary-wrapper,
+.payment-method-summary-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.time-label,
+.price-label,
+.payment-label {
+    margin-right: 10px;
+}
+
+#time-summary,
+#price-summary,
+#payment-method-summary {
+    margin-left: auto;
+}
+
+#player-id-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Animasi loading */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    margin-left: 8px;
+}
+
+.show-loading {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Penempatan elemen loading di tengah tombol */
+#confirm-btn {
+    position: relative;
+}
+
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.loading-text {
+    margin-left: 8px;
+}
+
+
+/* Result Popup */
+#result-popup {
+    display: none;
+}
+
+#result-popup .popup-content {
+    max-width: 400px;
+    margin: 100px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-color:#4CAF50;
+}
+
+#result-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+#result-content {
+    margin-top: 20px;
+}
