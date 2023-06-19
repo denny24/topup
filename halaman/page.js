@@ -20,7 +20,7 @@ function logout() {
   if (confirmation) {
     localStorage.removeItem("username");
     // Redirect ke halaman login atau halaman lain yang sesuai
-    window.location.href = "../login.html"; // Ganti dengan halaman login atau halaman tujuan setelah log out
+    window.location.href = "../index.html"; // Ganti dengan halaman login atau halaman tujuan setelah log out
   }
 }
 
